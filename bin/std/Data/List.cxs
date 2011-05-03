@@ -1,0 +1,31 @@
+module Data.List
+
+List<A>
+
+    ListNode<A>
+        
+        data: A
+        next: ListNode<A>
+
+        ListNode<A> (data: A)
+            this.data := data
+        end
+
+    end
+
+    head, tail: ListNode<A>
+
+    pushBack (data: A) ➔ A
+        if ¬head
+            head := ListNode<A>(data)
+            tail := head
+        else
+            tail.next := ListNode<A>(data)
+            tail := tail.next
+        end
+
+        return data
+    end
+
+end
+

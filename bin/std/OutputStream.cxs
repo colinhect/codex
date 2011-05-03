@@ -1,0 +1,11 @@
+module Stream.OutputStream
+
+OutputStream
+
+    write (string : String) ➔ Void -
+    writeChar (char : Char) ➔ Void -
+    writeLine (string : String) ➔ Void -
+    writeBytes (bytes : [Byte]) ➔ Void -
+
+end
+

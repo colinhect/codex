@@ -1,0 +1,18 @@
+module System
+
+import Stream
+
+Console : Stream
+
+    writeLine (text: String) ➔ Void
+        text.append('\n')
+        _invoke(14)
+    end
+
+    readLine () ➔ String
+        return _invoke(15)
+    end
+
+end
+
+

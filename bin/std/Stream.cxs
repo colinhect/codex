@@ -1,0 +1,8 @@
+module Stream
+
+import Stream.InputStream
+import Stream.OuputStream
+
+Stream : InputStream, OutputStream
+end
+

@@ -1,0 +1,18 @@
+The only working source file right now is Fibonacci.cxs.  Compile with:
+    codexc ../test/Fibonacci.cxs
+
+... and run the program with:
+    codex out.cxe
+
+Types:
+    
+    Int     - Integer type
+    Nat     - Natural number (non-negative)
+    Real    - Floating point
+    Bool    - Boolean value
+
+Extensions:
+
+    .cxs    (Codex Source)
+    .cxe    (Codex executable)
+

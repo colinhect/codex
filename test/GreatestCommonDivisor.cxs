@@ -1,0 +1,43 @@
+module Main
+
+main () ➔ Int
+    x: Int
+    y: Int
+
+    while 1
+        x := readInt()
+        
+        if x = 0
+            return 1
+        end        
+
+        y := readInt()
+
+        writeInt(gcd(x, y))
+    end
+
+    return 1
+end
+
+gcd (x: Nat, y: Nat) ➔ Nat 
+    
+    while x ≠ y 
+        if x > y
+            x := x - y
+        else 
+            y := y - x
+        end
+    end
+    
+    return x
+end
+
+readInt () ➔ Int
+    return (_internal(10): Int)
+end
+
+writeInt (int: Int) ➔ Void
+    _internal(20)
+    return
+end
+

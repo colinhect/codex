@@ -1,0 +1,8 @@
+
+String:- () {
+	
+	-- Can define functions for casting to other objects
+	cast:- Int {
+		return stringToIntFunction(this)
+	}
+}

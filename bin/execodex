@@ -1,0 +1,6 @@
+#!/bin/bash
+
+codexc $1 -o temp.cxe
+codex temp.cxe
+rm temp.cxe
+

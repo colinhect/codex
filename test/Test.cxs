@@ -1,0 +1,21 @@
+module Main
+
+main () ➔ Int
+    x: Nat
+    x := 0
+
+    while x ≤ 786432
+        x := factorial(10)
+        x := x+1
+    end
+
+    return factorial(10)
+end
+
+factorial (n: Nat) ➔ Nat
+    if n = 1
+        return 1
+    else
+        return n ∙ factorial(n-1)
+    end
+end

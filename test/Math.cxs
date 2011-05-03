@@ -1,0 +1,26 @@
+codex Math
+
+Vector3<A> {
+    x, y, z: A
+
+    ∙ (v: Vector) ➔ Vector {
+        return Vector3<A> (x∙v.x, y∙v.y, z∙v.z)
+    }
+}
+
+factorial (n: A) ➔ A {
+	return n ∙ factorial (n - 1)
+}
+
+// Meanwhile.. back at the ranch...
+codex SomeOtherFile
+
+import Math
+
+main(args : [String]) ➔ Int {
+	vector: Math.Vector<Int>	
+	vector := Math.Vector<Int>(1, 3, 5)
+
+    Math.normalize(something)
+}
+

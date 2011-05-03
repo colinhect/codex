@@ -1,0 +1,10 @@
+module Stream.InputStream
+
+InputStream : Stream
+
+    readChar () ➔ Char -
+    readLine () ➔ String -
+    readBytes (numBytes : Nat) ➔ [Byte] -
+
+end
+

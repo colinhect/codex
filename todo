@@ -1,0 +1,8 @@
+Todo for Codex:
+
+    * Fix seg fault when uncommenting out defs deletion in Module.
+
+    * Variable declarations are currently implemented by pushing the default
+      value on the stack.  Therefore they must be the first portion of a block
+      of code.
+

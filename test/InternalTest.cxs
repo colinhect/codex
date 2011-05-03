@@ -1,0 +1,13 @@
+module InternalTest
+
+readInt () ➔ Int
+    return _internal(10)
+end
+
+main () ➔ Int
+    x: Int
+
+    x := readInt()
+
+    return x
+end

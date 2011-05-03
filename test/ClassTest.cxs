@@ -1,0 +1,46 @@
+module Test
+
+Person
+
+    age : Int
+
+    Person (person : Person)
+        this.age = person.age
+    end
+
+    Person (age : Int)
+
+        while age > 10
+            this.age = age       
+        end 
+
+        age = 9
+   
+    end
+
+end
+
+personify (person : Person) ➔ Person
+    newPerson = Person(person)
+
+    return newPerson
+end
+
+main () ➔ Int
+
+    person = Person(42)    
+
+    x = 10
+
+    y = 123
+
+    if x > y
+        y = 14
+    else
+        x = 14
+    end
+    
+    return person.age
+
+end
+

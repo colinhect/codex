@@ -1,0 +1,15 @@
+main () ➔ Int {
+	xs ≔ [0..10]
+	xs ≔ map(λ(x: Int) ➔ Int { return x∙x }, xs)
+}
+
+map (f: (A) ➔ A, xs: [A]) ➔ [A] {
+	result: [A]
+	
+	for (x  xs)
+		result.pushBack(f(x))
+
+	return result
+}
+
+

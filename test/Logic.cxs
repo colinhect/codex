@@ -1,0 +1,23 @@
+main () ➔ Int {
+	x, y: Bool
+	a, b, c: Int
+
+	x ≔ true
+	y ≔ false
+	
+	if (x ∧ ⌝(x ∨ y) ∨ (x ≠ y)) {
+		return 0
+	} else if(⌝x ∨ (x ∧ y ∧ true) ∨ (x = y)) {
+		return 1
+	} else {
+		a ≔ b ≔ 14
+		c ≔ 28
+
+		a ≔ (a ∙ b + c)/pi
+
+		if ((a ≤ c) ∧ (c ≥ b))
+			x ≔ true
+		else
+			x ≔ false
+	}
+}

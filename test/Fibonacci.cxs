@@ -1,0 +1,15 @@
+module Fibonacci
+
+main () ➔ Int
+    return fibonacci(16)
+end
+
+-- Computes the nth fibonacci number. 
+fibonacci (n: Int) ➔ Int
+    if n < 2
+        return n
+    else
+        return fibonacci(n-1) + fibonacci(n-2)
+    end
+end
+
